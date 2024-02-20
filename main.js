@@ -4,8 +4,8 @@
 // You should create four lines that look like this:
 // console.log(5 + 3)
 // Your output should simply be four lines with the number 8 appearing once on each line.
-/*---------------------strat working-----------------*/
-/*---------------------- 1st step working-------------------*/
+/*----------------------------strat working --------------------*/
+/*-----------1st step---------------*/
 // Additon declare 
 // console.log(4+4);
 // Subraction declare 
@@ -14,7 +14,7 @@
 // console.log(2*4);
 // Division declare 
 // console.log(16/2);
-/*--------------------------2nd step working--------------*/
+/*-----------2nd--------- step---------------*/
 console.log(5 + 3); // Addition: 5 + 3 = 8
 console.log(10 - 2); // Subtraction: 10 - 2 = 8
 console.log(4 * 2); // Multiplication: 4 * 2 = 8
