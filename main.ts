@@ -1,48 +1,40 @@
-// 31 : No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
-// • If the list is empty, print the message We need to find some users!
+// 32: Checking Usernames: Do the following to create a program that simulates how websites 
+// ensure that everyone has a unique username.
+// • Make a list of five or more usernames called current_users.
 
-// • Remove all of the usernames from your array, and make sure the correct message is printed.
+// • Make another list of five usernames called new_users. Make sure one or two of the new 
+// usernames are also in the current_users list.
 
-/*----------------------------1st step-------------------------*/
-// let No_User :string[] = []
+// • Loop through the new_users list to see if each new username has already been used. 
+// If it has, print a message that the person will need to enter a new username. If a username 
+// has not been used, print a message saying that the username is available.
 
-// if (No_User.length === 0) {
-//      console.log("We need to find some users!");
-//      } else {
+// • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not 
+// be accepted.
 
-// for(let i=0; i<No_User.length; i++){
-//    if(No_User[i] == "Admin"){
-//     console.log("Hello admin, would you like  to see a status report?")
-//    } else{
-//     console.log(No_User[i])
-//    }
-//       }
-//  }
+/*-----------------------start work-----------------------------------*/
+// Define current users and new users
+const current_users: string[] = ["john", "Naveed", "Hashir", "Irfan", "Hassan"];
+const new_users: string[] = ["Eman", "wania", "Farheen", "Muniba", "Sana"];
 
+// Convert all current usernames to lowercase for case-insensitive comparison
 
-/*----------------------------2nd step-------------------------*/
+const Checking_current_users_lower: string[] = current_users.map(username => username.toLowerCase());
 
-let No_User: string[] = [];
+// Check each new username
+for (const Checking_new_user of new_users) {
 
-// Check if the list of users is empty
-if (No_User.length === 0) {
-    console.log("We need to find some users!");
-} else {
-    for (let no_user of No_User) {
-        if (no_user.toLowerCase() === 'admin') {
-            console.log('Hello Admin, would you like to see a status report?');
-        } else {
-            console.log(`Hello ${no_user}, thank you for logging in again.`);
-        }
+    // Convert the new username to lowercase for case-insensitive comparison
+
+    const Checking_new_user_lower = Checking_new_user.toLowerCase();
+
+    // Check if the new username is already in use
+    if (Checking_current_users_lower.includes(Checking_new_user_lower)) {
+        console.log(`Sorry, the username "${new_users}" is already taken. Please enter a new username.`);
+    } else {
+        console.log(`Congratulations! The username "${new_users}" is available.`);
     }
 }
-
-
-
-
-
-
-
 
 
 
