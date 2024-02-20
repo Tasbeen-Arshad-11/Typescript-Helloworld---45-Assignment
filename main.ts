@@ -1,34 +1,16 @@
-// 43: Unchanged Magicians: Start with your work from Exercise 40. Call the function
-//  make_great() with a copy of the array of magicians’ names. Because the original
-//   array will be unchanged, return the new array and store it in a separate array. 
-//   Call show_magicians() with each array to show that you have one array of the original
-//    names and one array with the Great added to each magician’s name.
+// 44: Sandwiches: Write a function that accepts a array of items a person wants on a 
+// sandwich. The function should have one parameter that collects as many items as the 
+// function call provides, and it should print a summary of the sandwich that is being ordered. 
+// Call the function three times, using a different number of arguments each time.
 
-
-/*--------------start working --------------*/
-
-function show_magicians(magicians: string[]): void {
-    magicians.forEach(magician => console.log(magician));
+/*-------------------strat working-------------*/
+function Sandwiches(...items: string[]): void {
+    console.log("Making a sandwich with the following items:");
+    items.forEach(item => console.log("- " + item));
+    console.log("Sandwich ready!\n");
 }
 
-function make_great(magicians: string[]): string[] {
-    const greatMagicians: string[] = [];
-    for (let magician of magicians) {
-        greatMagicians.push("the Great " + magician);
-    }
-    return greatMagicians;
-}
-
-// Original array of magician's names
-const magicianNames: string[] = ["Harry Houdini", "Teller", "Penn Jillette", "Gay Blackstone"];
-
-// Calling make_great() with a copy of the original array
-const greatMagicianNames: string[] = make_great([...magicianNames]);
-
-// Showing the original magician names
-console.log("Original Magicians:");
-show_magicians(magicianNames);
-
-// Showing the modified magician names with "the Great" added
-console.log("\nGreat Magicians:");
-show_magicians(greatMagicianNames);
+// Calling the function with different number of arguments
+Sandwiches("Ham", "Cheese", "Lettuce", "Tomato");
+Sandwiches("Turkey", "Bacon");
+Sandwiches("Peanut Butter", "Jelly");
