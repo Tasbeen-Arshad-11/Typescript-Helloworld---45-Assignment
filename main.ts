@@ -1,17 +1,18 @@
-// 15: Changing Guest List: You just heard that one of your guests can’t make the dinner,
-//  so you need to send out a new set of invitations. You’ll have to think of someone else
-//   to invite.
+// 16: More Guests: You just found a bigger dinner table, so now more space is available.
+//  Think of three more guests to invite to dinner.
 
-// • Start with your program from Exercise 14. Add a print statement at the end of your 
-// program stating the name of the guest who can’t make it.
+// • Start with your program from Exercise 15. Add a print statement to the end of your 
+// program informing people that you found a bigger dinner table.
 
-// • Modify your list, replacing the name of the guest who can’t make it with the name 
-// of the new person you are inviting.
+// • Add one new guest to the beginning of your array.
 
-// • Print a second set of invitation messages, one for each person who is still in your list.
+// • Add one new guest to the middle of your array. • Use append() to add one new guest to the 
+// end of your list. • Print a new set of invitation messages, one for each person in your list.
 
-/*----------------------------start working-------------------*/
-/*----------------------------1sts working-------------------*/
+/*------------------start working---------------*/
+/*------------------1st work---------------*/
+
+
 // let Guest_List :string[] = ['Kamran Tessori','Sir Zia','Daniyal Nagoori'];
 
 // for(let i=0; i<Guest_List.length; i++){
@@ -32,10 +33,22 @@
 //     console.log('Dear Mr. ' + Guest_List[i] + ',\n\nWe are inviting them to dinner.\n\nThank You for coming to our part....\n\n')
 // }
 
-// console.log(`Mr. ${Absent_Guest} Is not coming.`)
+// console.log(`Mr. ${Absent_Guest} Is not coming.`);
+
+// console.log('Good News! we find a three more guests we are  invite to dinner for 3 more guset.')
+
+// Guest_List.unshift('Arshad');
+// Guest_List.splice(2,0 ,'Ali');
+// Guest_List.push('Sufiyan');
+
+// for(let i=0; i<Guest_List.length; i++){
 
 
-/*----------------2nd working stat-----------------------*/
+//     console.log('Dear Mr. ' + Guest_List[i] + ',\n\nWe are inviting them to dinner.\n\nThank You for coming to our part....\n\n')
+// }
+
+
+/*---------------------------2nd step---------------*/
 // Array containing the original guest list
 let guestList: string[] = ['Kamran Tessori','Sir Zia','Daniyal Nagoori'];
 
@@ -44,16 +57,26 @@ const guestWhoCantMakeIt: string = guestList.splice(1, 1)[0]; // Remove the seco
 console.log(`${guestWhoCantMakeIt} can't make it to the dinner.`);
 
 // Replace the name of the guest who can't make it with a new person
-const newGuest: string = "Mustafa kamal";
+const newGuest: string = "Mustafa kamal..";
 guestList.push(newGuest);
+
+// Print a message informing about the bigger dinner table
+console.log("We found a bigger dinner table!");
+
+// Add three more guests
+guestList.unshift("Arshad"); // Add to the beginning
+guestList.splice(2, 0, "Albert Einstein"); // Add to the middle
+guestList.push("Sufiyan"); // Add to the end
 
 // Function to print invitation message to each person
 function sendInvitation(guest: string): void {
     console.log(`Dear ${guest},\n\nYou are cordially invited to dinner at my place. It would be an honor to have you join us.\n\nBest regards,\n[Tasbeen Arshad]`);
 }
 
-// Print a second set of invitation messages
-console.log("\nSecond set of invitation messages:");
+// Print a new set of invitation messages
+console.log("\nNew set of invitation messages:");
 guestList.forEach(sendInvitation);
+
+
 
 

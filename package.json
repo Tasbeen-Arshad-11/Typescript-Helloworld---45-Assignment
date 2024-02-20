@@ -1,9 +1,9 @@
 {
-  "name": "15-changing-guest-list",
+  "name": "16-more-guests",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+"types":"module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
