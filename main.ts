@@ -1,40 +1,22 @@
-// 21: They think of something you could store in a TypeScript Object. 
-// Write a program that creates Objects containing these items.
-/*----------------start work-------------*/
-/*------------1st work------------*/
-// let Person : {name:string, Gender:string, age:number} ={name:"Tasbeen Arshad",Gender:"Female"
-// ,age:19}
+// 22- Intentional Error: If you haven’t received an array index error in one of your programs 
+// yet, try to make one happen. Change an index in one of your programs to produce an index error.
+//  Make sure you correct the error before closing the program.
 
-// print the program 
-// console.log(Person)
+/*---------------start work-------------*/
+/*---------1st work-----------*/
+
+// create a error in array 
+// const Months : string[] =["January","February","March","April","May","June","July",
+// "August","September","October","November","December"]
+
+// console.log(Months{12})
+// console.log(Months[11])
 
 
-/*--------------------2nd work------------*/
-// Define objects containing information about cars
-const car1 = {
-    make: "Toyota",
-    model: "Corolla",
-    year: 2022,
-    color: "Red"
-};
+/*---------------2ns step------------*/
+// Define an array of fruits
+const Months: string[] = ["Apple", "Banana", "Orange"];
 
-const car2 = {
-    make: "Honda",
-    model: "Civic",
-    year: 2021,
-    color: "Blue"
-};
-
-const car3 = {
-    make: "Ford",
-    model: "Mustang",
-    year: 2020,
-    color: "Yellow"
-};
-
-// Print the objects containing car information
-console.log("Car 1:", car1);
-console.log("Car 2:", car2);
-console.log("Car 3:", car3);
-
+// Try to access an index that doesn't exist (index 3)
+console.log(Months[3]); // This will produce an index error because the array only has elements at indices 0, 1, and 2
 
