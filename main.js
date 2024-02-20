@@ -1,21 +1,22 @@
-"use strict";
-// 6: Stripping Names: Store a person’s name, and include some whitespace characters 
-// at the beginning and end of the name. Make sure you use each character combination, 
-// "\t" and "\n", at least once. Print the name once, so the whitespace around the name
-//  is displayed. Then print the name after striping the white spaces.
-/*----------------start working-------------*/
-/*-------1st step-----------------*/
-// person name with whitespace declare
-// const PersonName : string = '    \n\tTasbeen Arshad Programmer\t\n    ';
-// console.log(PersonName);
-// person name without whitespace declare 
-// const PersonName_Without_whitespace : string = PersonName.trim();
-// console.log(PersonName_Without_whitespace);
-/*----------2nd step------------*/
-// Store the person's name with whitespace characters
-const personNameWithWhitespace = "\t\n   Tasbeen Arshad Programmer   \t\n";
-// Print the name with whitespace
-console.log("Name with whitespace:", personNameWithWhitespace);
-// Strip the whitespace and print the name
-const strippedName = personNameWithWhitespace.trim();
-console.log("Stripped name:", strippedName);
+// 7: Number Eight: Write addition, subtraction, multiplication, and division 
+// operations that each result in the number 8. Be sure to enclose your operations in print 
+// statements to see the results.
+// You should create four lines that look like this:
+// console.log(5 + 3)
+// Your output should simply be four lines with the number 8 appearing once on each line.
+/*---------------------strat working-----------------*/
+/*---------------------- 1st step working-------------------*/
+// Additon declare 
+// console.log(4+4);
+// Subraction declare 
+// console.log(11-3);
+// Multiplication declare 
+// console.log(2*4);
+// Division declare 
+// console.log(16/2);
+/*--------------------------2nd step working--------------*/
+console.log(5 + 3); // Addition: 5 + 3 = 8
+console.log(10 - 2); // Subtraction: 10 - 2 = 8
+console.log(4 * 2); // Multiplication: 4 * 2 = 8
+console.log(16 / 2); // Division: 16 / 2 = 8
+export {};
