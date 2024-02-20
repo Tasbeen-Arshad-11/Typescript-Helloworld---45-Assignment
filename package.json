@@ -1,9 +1,9 @@
 {
-  "name": "19-dinner-guests",
+  "name": "20-think-of-something-you-could-store-in-a-array",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

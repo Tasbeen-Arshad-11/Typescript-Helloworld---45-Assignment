@@ -1,21 +1,19 @@
-// 19: Dinner Guests: Working with one of the programs from Exercises 14 through 18,
-// print a message indicating the number of people you are inviting to dinner.
+// 20: Think of something you could store in a array. For example, you could make a 
+// list of mountains, rivers, countries, cities, languages, or anything else you’d like. 
+// Write a program that creates a list containing these items.
+/*--------------------start work----------------*/
+/*---------1st work-----------------*/
+
+// let programmingLanguages :string [] =["JavaScript", "Python", "Java", "C++", "TypeScript", "Ruby", "Swift"]
+
+// console.log("List of mountains");
+// console.log(programmingLanguages)
 
 
-/*--------------------start a work---------------------*/
-// Array containing the original guest list
-const guestList: string[] = ['Kamran Tessori','Babar Azam','Wajah Ali'];
+/*---------------2nd work---------------*/
+// Array containing a list of programming languages
+const programmingLanguages: string[] = ["JavaScript", "Python", "Java", "C++", "TypeScript", "Ruby", "Swift"];
 
-// Print the number of people being invited to dinner
-console.log(`Number of people invited to dinner: ${guestList.length}`);
-
-// Function to print invitation message to each person
-function sendInvitation(guest: string): void {
-    console.log(`Dear ${guest},\n\nYou are cordially invited to dinner at my place. It would be an honor to have you join us.\n\nBest regards,\n[Tasbeen arshad]`);
-}
-
-// Print a message indicating the number of people being invited
-console.log(`Number of people invited to dinner: ${guestList.length}`);
-
-// Print a set of invitation messages
-guestList.forEach(sendInvitation);
+// Print the array containing programming languages
+console.log("List of programming languages:");
+console.log(programmingLanguages);
