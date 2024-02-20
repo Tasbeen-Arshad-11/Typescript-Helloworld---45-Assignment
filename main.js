@@ -1,22 +1,13 @@
-// 7: Number Eight: Write addition, subtraction, multiplication, and division 
-// operations that each result in the number 8. Be sure to enclose your operations in print 
-// statements to see the results.
-// You should create four lines that look like this:
-// console.log(5 + 3)
-// Your output should simply be four lines with the number 8 appearing once on each line.
-/*----------------------------strat working --------------------*/
-/*-----------1st step---------------*/
-// Additon declare 
-// console.log(4+4);
-// Subraction declare 
-// console.log(11-3);
-// Multiplication declare 
-// console.log(2*4);
-// Division declare 
-// console.log(16/2);
-/*-----------2nd--------- step---------------*/
-console.log(5 + 3); // Addition: 5 + 3 = 8
-console.log(10 - 2); // Subtraction: 10 - 2 = 8
-console.log(4 * 2); // Multiplication: 4 * 2 = 8
-console.log(16 / 2); // Division: 16 / 2 = 8
+// 9: Favorite Number: Store your favorite number in a variable. Then,using that variable,
+//  create a message that reveals your favorite number. Print that message.
+// const FavoriteNumber : number = 17;
+// const message : string = 'This is my Favorite Number' + FavoriteNumber;
+// console.log(message);
+/*-----------------2nd step--------------------------*/
+// Store favorite number in a variable
+const FavoriteNumber = 7;
+// Create message revealing the favorite number
+const message = `My favorite number is ${FavoriteNumber}.`;
+// Print the message
+console.log(message);
 export {};
