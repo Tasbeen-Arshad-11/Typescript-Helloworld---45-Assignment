@@ -1,34 +1,64 @@
-"use strict";
-// 26: Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an 
-// if-else chain.
-// • If the alien’s color is green, print a statement that the player just earned 5 points for
-//  shooting the alien.
-Object.defineProperty(exports, "__esModule", { value: true });
-// • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
-// • Write one version of this program that runs the if block and another that runs the else block.
-/*-----------start------------------*/
-/*--------------1st work-------------*/
-// let Alien_Colors : string = "purple"
-// Alien_Colors = "blue";
-// if(Alien_Colors === "red"){
-//     console.log("player just earned 15 points")
-// } else{
-//     console.log("player just earned 15 points")
+// 27: Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+// • If the alien is green, print a message that the player earned 5 points.
+// • If the alien is yellow, print a message that the player earned 10 points.
+// • If the alien is red, print a message that the player earned 15 points.
+// • Write three versions of this program, making sure each message is printed for the
+//  appropriate color alien.
+/*----------------start work---------------*/
+/*------------1st work--------------*/
+// let Alien_Colors : string = "yellow"
+// if(Alien_Colors === "yellow"){
+//     console.log("player just earned 5 points")
 // }
-/*--------------2nd work-------------*/
-// Version running the if block:
-let alien_color2 = 'green';
+// else if(Alien_Colors === "green"){
+//     console.log("Player just earned 10 points")
+// }
+// else if(Alien_Colors === "red"){
+//    console.log("player just earned 5 points")
+// } 
+/*-----------------2ns word_----------*/
+// let Alien_Colors : string = "red"
+// if(Alien_Colors === "yellow"){
+//     console.log("player just earned 5 points")
+// }
+// else if(Alien_Colors === "green"){
+//     console.log("Player just earned 10 points")
+// }
+// else if(Alien_Colors === "red"){
+//    console.log("player just earned 5 points")
+// } 
+/*------------3rd work-----*/
+// Green alien
+let alien_color1 = 'green';
+if (alien_color1 === 'green') {
+    console.log("Congratulations! You just earned 5 points for shooting the green alien.");
+}
+else if (alien_color1 === 'yellow') {
+    console.log("Congratulations! You just earned 10 points for shooting the yellow alien.");
+}
+else if (alien_color1 === 'red') {
+    console.log("Congratulations! You just earned 15 points for shooting the red alien.");
+}
+// Yellow alien
+let alien_color2 = 'yellow';
 if (alien_color2 === 'green') {
     console.log("Congratulations! You just earned 5 points for shooting the green alien.");
 }
-else {
-    console.log("Congratulations! You just earned 10 points for shooting the non-green alien.");
+else if (alien_color2 === 'yellow') {
+    console.log("Congratulations! You just earned 10 points for shooting the yellow alien.");
 }
-// Version running the else block:
+else if (alien_color2 === 'red') {
+    console.log("Congratulations! You just earned 15 points for shooting the red alien.");
+}
+// Red alien
 let alien_color3 = 'red';
 if (alien_color3 === 'green') {
     console.log("Congratulations! You just earned 5 points for shooting the green alien.");
 }
-else {
-    console.log("Congratulations! You just earned 10 points for shooting the non-green alien.");
+else if (alien_color3 === 'yellow') {
+    console.log("Congratulations! You just earned 10 points for shooting the yellow alien.");
 }
+else if (alien_color3 === 'red') {
+    console.log("Congratulations! You just earned 15 points for shooting the red alien.");
+}
+export {};
