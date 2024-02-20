@@ -1,50 +1,45 @@
-// 29: Favorite Fruit: Make a array of your favorite fruits, and then write a series of 
-// independent if statements that check for certain fruits in your array.
-// • Make a array of your three favorite fruits and call it favorite_fruits.
-// • Write five if statements. Each should check whether a certain kind of fruit is in
-//  your array. If the fruit is in your array, the if block should print a statement, such
-//   as You really like bananas!
-/*-----------------start work-------------*/
-/*----------1st step----------------*/
-// const Favorite_Fruits: string[]=["Pomegranate","Strawberry","Cherry"];
-// if(Favorite_Fruits.includes("pomegrante")){
-//     console.log("you really like a pomegranate")
+// 30: Hello Admin: Make a array of five or more usernames, including the name 'admin'.
+//  Imagine you are writing code that will print a greeting to each user after they log in
+//   to a website. Loop through the array, and print a greeting to each user:
+// • If the username is 'admin', print a special greeting, such as Hello admin, would you like 
+// to see a status report?
+// • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+/*-----------------------------------start working---------------------------*/
+// let Hello_Admin :string[] = ["Admin","Sufiyan","Hassan","Anus",]
+// for(let i=0; i<Hello_Admin.length; i++){
+//    if(Hello_Admin[i] == "Admin"){
+//     console.log("Hello admin, would you like  to see a status report?")
+//    } 
+//     console.log(Hello_Admin[i])
 // }
-// if(Favorite_Fruits.includes("Strawberry")){
-//     console.log("you really like a Strawberry")
+/*-----------------------------------2nnd working--------------*/
+// let Hello_Admin :string[] = ["Admin","Sufiyan","Hassan","Anus","Arshad"]
+// for(let i=0; i<Hello_Admin.length; i++){
+//    if(Hello_Admin[i] == "Admin"){
+//     console.log("Hello Admin, would you like  to see a status report?")
+//    } else{
+//     console.log(`Hello ${Hello_Admin[i]}`)
+//    } 
 // }
-// if(Favorite_Fruits.includes("Cherry")){
-//     console.log("you really like a Cherry")
+/*-----------------------------------2nnd working--------------*/
+// let Hello_Admin: string[] = ['admin','Sufiyan','Hassan','Anus','Arshad'];
+// for (let Hello_admin of Hello_Admin) {
+//     if (Hello_admin.toLowerCase() === 'admin') {
+//         console.log('Hello admin, would you like to see a status report?');
+//     } else {
+//         console.log(`Hello ${Hello_admin}, thank you for logging in again.`);
+//     }
 // }
-// else{
-//     console.log("Cherry are not in your Favorite Fruits lists.")
-// }
-// if(Favorite_Fruits.includes("Strawberry")){
-//     console.log("you really like a Strawberry")
-// }
-// if(Favorite_Fruits.includes("Banana")){
-//     console.log("you really like a Banana")
-// }else{
-//     console.log("Banana are not in your Favorite Fruits lists.")
-// }
-/*--------2nd step-------------------*/
-let age = 25;
-if (age < 2) {
-    console.log("The person is a baby.");
-}
-else if (age >= 2 && age < 4) {
-    console.log("The person is a toddler.");
-}
-else if (age >= 4 && age < 13) {
-    console.log("The person is a kid.");
-}
-else if (age >= 13 && age < 20) {
-    console.log("The person is a teenager.");
-}
-else if (age >= 20 && age < 65) {
-    console.log("The person is an adult.");
-}
-else {
-    console.log("The person is an elder.");
+/*-----------------------------------3rd working--------------*/
+// Array of usernames
+let usernames = ['admin', 'Sufiyan', 'Hassan', 'Anus', 'Arshad'];
+// Loop through the array and print greetings
+for (let username of usernames) {
+    if (username === 'admin') {
+        console.log("Hello admin, would you like to see a status report?");
+    }
+    else {
+        console.log(`Hello ${username}, thank you for logging in again.`);
+    }
 }
 export {};
