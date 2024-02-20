@@ -1,39 +1,14 @@
-// 40: Album: Write a function called make_album() that builds a Object describing a
-//  music album. The function should take in an artist name and an album title, and it 
-//  should return a Object containing these two pieces of information. Use the function to 
-//  make three dictionaries representing different albums. Print each return value to show 
-//  that Objects are storing the album information correctly. Add an optional parameter to
-//   make_album() that allows you to store the number of tracks on an album. If the calling 
-//   line includes a value for the number of tracks, add that value to the album’s Object. 
-//   Make at least one new function call that includes the number of tracks on an album.
+// 41: Magicians: Make a array of magician’s names. Pass the array to a function 
+// called show_magicians(), which prints the name of each magician in the array.
 
-/*-------------------start workin--g--------------*/
+/*-----------------start working-------------*/
 
-interface Album {
-    artist: string;
-    title: string;
-    tracks?: number;
+function show_magicians(magicians: string[]): void {
+    magicians.forEach(magician => console.log(magician));
 }
 
-function make_album(artist: string, title: string, tracks?: number): Album {
-    const album: Album = {
-        artist: artist,
-        title: title
-    };
-    if (tracks !== undefined) {
-        album.tracks = tracks;
-    }
-    return album;
-}
+// Array of magician's names
+const magicianNames: string[] = ["Harry Houdini", "David Copperfield", "Penn Jillette", "Teller"];
 
-// Making three dictionaries representing different albums
-const Album1 = make_album("Artist1", "Album1");
-const Album2 = make_album("Artist2", "Album2", 12); // Including the number of tracks
-const Album3 = make_album("Artist3", "Album3");
-
-// Printing each return value to show that Objects are storing the album information correctly
-console.log(Album1);
-console.log(Album2);
-console.log(Album3);
-
-
+// Calling the function to show the magician's names
+show_magicians(magicianNames);
