@@ -1,31 +1,13 @@
-// 35: Animals: Think of at least three different animals that have a common characteristic.
+// 36: T-Shirt: Write a function called make_shirt() that accepts a size and the text 
+// of a message that should be printed on the shirt. The function should print a sentence 
+// summarizing the size of the shirt and the message printed on it. Call the function.
 
-//  Store the names of these animals in a list, and then use a for loop to print out the name
-//   of each animal. • Modify your program to print a statement about each animal, such as 
-//   A dog would make a great pet. • Add a line at the end of your program stating what these 
-//   animals have in common. You could print a sentence such as Any of these animals would make
-//    a great pet!
 
-/*-----------------------start working----------------------------*/
-// List containing different animals with a common characteristic
-const Animals: string[] = ["Dog", "Cat", "Rabbit"];
+/*-----------start working--------------*/
 
-// Printing each animal name
-console.log("Printing animal names:");
-for (let Animal of Animals) {
-    console.log(Animal);
+function T_Shirt(Size: string, Message: string): void {
+    console.log(`Creating a ${Size} shirt with the message: "${Message}"`);
 }
 
-// Printing a statement about each animal
-console.log("\nPrinting statements about each animal:");
-for (let Animal of Animals) {
-    console.log(`A ${Animal.toLowerCase()} would make a great pet.`);
-}
-
-// Printing a statement about the common characteristic
-console.log("\nAny of these animals would make a great pet!");
-
-
-
-
-
+// Calling the function with size and message
+T_Shirt("Large", "Hello, i`m Tasbeen Arshad Programmer!");
