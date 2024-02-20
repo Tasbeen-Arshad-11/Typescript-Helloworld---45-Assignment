@@ -1,8 +1,13 @@
 {
-  "name": "5-famous-quote-2",
+  "dependencies": {
+    "init": "^0.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19"
+  },
+  "name": "6-stripping-names",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +15,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^20.11.19"
-  }
+  "description": ""
 }

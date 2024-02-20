@@ -1,18 +1,21 @@
 "use strict";
-// 5: Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name 
-// in a variable called famous_person. Then compose your message and store it in a 
-// new variable called message.Print your message.
-/*---------------------strat working--------*/
-/* ------------------1st step--------------*/
-// let Famous_person_rep : string = 'Mark Zuckerberg';
-// let message : string = '" Co-founder, executive chairman and CEO of Meta Platforms (formerly Facebook, Inc.)"';
-// console.log(`${Famous_person_rep} once a said, ${message}`);
-/* ------------------2nd step--------------*/
-// Store the famous person's name in a variable
-const Famous_person_rep = "Albert Einstein";
-// Define the quote
-const quote = "A person who never made a mistake never tried anything new.";
-// Compose the message
-const message = `${Famous_person_rep} once said, "${quote}"`;
-// Print the message
-console.log(message);
+// 6: Stripping Names: Store a person’s name, and include some whitespace characters 
+// at the beginning and end of the name. Make sure you use each character combination, 
+// "\t" and "\n", at least once. Print the name once, so the whitespace around the name
+//  is displayed. Then print the name after striping the white spaces.
+/*----------------start working-------------*/
+/*-------1st step-----------------*/
+// person name with whitespace declare
+// const PersonName : string = '    \n\tTasbeen Arshad Programmer\t\n    ';
+// console.log(PersonName);
+// person name without whitespace declare 
+// const PersonName_Without_whitespace : string = PersonName.trim();
+// console.log(PersonName_Without_whitespace);
+/*----------2nd step------------*/
+// Store the person's name with whitespace characters
+const personNameWithWhitespace = "\t\n   Tasbeen Arshad Programmer   \t\n";
+// Print the name with whitespace
+console.log("Name with whitespace:", personNameWithWhitespace);
+// Strip the whitespace and print the name
+const strippedName = personNameWithWhitespace.trim();
+console.log("Stripped name:", strippedName);
