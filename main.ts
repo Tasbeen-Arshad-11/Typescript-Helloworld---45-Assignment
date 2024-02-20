@@ -1,22 +1,22 @@
-// 12: Greetings: Start with the array you used in Exercise 11, but instead of 
-// just printing each person’s name, print a message to them. The text of each message 
-// should be the same, but each message should be personalized with the person’s name.
+// 13: Your Own Array: Think of your favorite mode of transportation, such as a
+//  motorcycle or a car, and make a list that stores several examples. Use your 
+//  list to print a series of statements about these items, such as “I would like to 
+//  own a Honda motorcycle.”
 
 
-/*-------------------strat working-----------------*/
-/*---------------------1st step----------------*/
-// let Name : string[] = ['Amna','Sara','Zehra','Minsa','Hira'];
+/*-------------------------------start working---------------*/
+/*---------------------1st step-----------------*/
+// let Transportation :string[] = ["Tesla Model S", "Yamaha MT-09", "Boeing 737", "Honda motorcycle"];
 
-// const message : string = 'She is a Genius Student:'
+// for(let i=0; i<Transportation.length; i++){
 
+//     console.log('I would like to own a ' + Transportation[i])
 
-// for(let i=0; i<Name.length; i++){
-//     console.log(message + Name[i]);
 // }
 
-/*---------------------2nd step----------------*/
-// Array containing the names of friends
-const Name: string[] = ['Amna','Sara','Zehra','Minsa','Hira'];
+/*---------------------2nd step-----------------*/
+// Array containing examples of favorite mode of transportation
+const Transportation: string[] = ["Tesla Model S", "Yamaha MT-09", "Boeing 737", "Honda motorcycle"];
 
-// Printing a personalized message to each person
-Name.forEach(name => console.log(`Hello, ${name}! I hope you're having a great day.`));
+// Printing statements about each item in the array
+Transportation.forEach(item => console.log(`I would like to own a ${item}.`));
