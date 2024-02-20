@@ -1,34 +1,33 @@
-"use strict";
-// 28: Stages of Life: Write an if-else chain that determines a person’s stage of life. 
-// Set a value for the variable age, and then:
-// • If the person is less than 2 years old, print a message that the person is a baby.
-Object.defineProperty(exports, "__esModule", { value: true });
-// • If the person is at least 2 years old but less than 4, print a message that the person 
-// is a toddler.
-// • If the person is at least 4 years old but less than 13, print a message that the person
-//  is a kid.
-// • If the person is at least 13 years old but less than 20, print a message that the person 
-// is a teenager.
-// • If the person is at least 20 years old but less than 65, print a message that the person 
-// is an adult.
-// • If the person is age 65 or older, print a message that the person is an elder.
-/*----------start work--------*/
-/*------------1st step------*/
-// let Age: number = 2
-// if (Age < 2){
-//     console.log("the person is a baby")
-// }else if (Age>=2 && Age <4){
-//     console.log("the person is a toddler")
-// }else if (Age>=4 && Age <13){
-//     console.log("the person is a kid.")
-// }else if (Age>=13 && Age <20){
-//     console.log("the person is a teenager.")
-// }else if (Age>=20 && Age <65){
-//     console.log("the person is a adult.")
-// }else if (Age>=65){
-//     console.log("the person is a elder")
+// 29: Favorite Fruit: Make a array of your favorite fruits, and then write a series of 
+// independent if statements that check for certain fruits in your array.
+// • Make a array of your three favorite fruits and call it favorite_fruits.
+// • Write five if statements. Each should check whether a certain kind of fruit is in
+//  your array. If the fruit is in your array, the if block should print a statement, such
+//   as You really like bananas!
+/*-----------------start work-------------*/
+/*----------1st step----------------*/
+// const Favorite_Fruits: string[]=["Pomegranate","Strawberry","Cherry"];
+// if(Favorite_Fruits.includes("pomegrante")){
+//     console.log("you really like a pomegranate")
 // }
-/*--------------2nd step ----------------*/
+// if(Favorite_Fruits.includes("Strawberry")){
+//     console.log("you really like a Strawberry")
+// }
+// if(Favorite_Fruits.includes("Cherry")){
+//     console.log("you really like a Cherry")
+// }
+// else{
+//     console.log("Cherry are not in your Favorite Fruits lists.")
+// }
+// if(Favorite_Fruits.includes("Strawberry")){
+//     console.log("you really like a Strawberry")
+// }
+// if(Favorite_Fruits.includes("Banana")){
+//     console.log("you really like a Banana")
+// }else{
+//     console.log("Banana are not in your Favorite Fruits lists.")
+// }
+/*--------2nd step-------------------*/
 let age = 25;
 if (age < 2) {
     console.log("The person is a baby.");
@@ -48,3 +47,4 @@ else if (age >= 20 && age < 65) {
 else {
     console.log("The person is an elder.");
 }
+export {};
