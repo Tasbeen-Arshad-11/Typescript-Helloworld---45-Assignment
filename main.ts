@@ -1,22 +1,30 @@
-// 13: Your Own Array: Think of your favorite mode of transportation, such as a
-//  motorcycle or a car, and make a list that stores several examples. Use your 
-//  list to print a series of statements about these items, such as “I would like to 
-//  own a Honda motorcycle.”
+// 14: Guest List: If you could invite anyone, living or deceased, to dinner, who would
+//  you invite? Make a list that includes at least three people you’d like to invite to dinner. 
+//  Then use your list to print a message to each person, inviting them to dinner.
 
 
-/*-------------------------------start working---------------*/
-/*---------------------1st step-----------------*/
-// let Transportation :string[] = ["Tesla Model S", "Yamaha MT-09", "Boeing 737", "Honda motorcycle"];
+/*------------------start working-----------------*/
 
-// for(let i=0; i<Transportation.length; i++){
+/*----------------1st step---------------------*/
 
-//     console.log('I would like to own a ' + Transportation[i])
+// let Guest_List :string[] = ['Kamran Tessori','Babar Azam','Wajah Ali'];
 
+// for(let i=0; i<Guest_List.length; i++){
+
+
+//     console.log('Dear Mr. ' + Guest_List[i] + ',\n\nWe are inviting them to dinner.\n\nThank You for coming to our part....')
 // }
 
-/*---------------------2nd step-----------------*/
-// Array containing examples of favorite mode of transportation
-const Transportation: string[] = ["Tesla Model S", "Yamaha MT-09", "Boeing 737", "Honda motorcycle"];
+/*----------------------2nd step-------------*/
+// Array containing people I'd like to invite to dinner
+const Guest_List: string[] = ['Kamran Tessori','Babar Azam','Wajah Ali'];
 
-// Printing statements about each item in the array
-Transportation.forEach(item => console.log(`I would like to own a ${item}.`));
+// Function to print invitation message to each person
+function sendInvitation(guest: string): void {
+    console.log(`Dear ${guest},\n\nYou are cordially invited to dinner at my place. It would be an honor to have you join us.\n\nBest regards,\n[Tasbeen Arshad]`);
+}
+
+// Iterating through the guest list and sending invitations
+Guest_List.forEach(sendInvitation);
+
+
