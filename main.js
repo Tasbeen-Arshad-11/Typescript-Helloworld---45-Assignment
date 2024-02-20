@@ -1,15 +1,34 @@
-// 20: Think of something you could store in a array. For example, you could make a 
-// list of mountains, rivers, countries, cities, languages, or anything else you’d like. 
-// Write a program that creates a list containing these items.
-/*--------------------start work----------------*/
-/*---------1st work-----------------*/
-// let programmingLanguages :string [] =["JavaScript", "Python", "Java", "C++", "TypeScript", "Ruby", "Swift"]
-// console.log("List of mountains");
-// console.log(programmingLanguages)
-/*---------------2nd work---------------*/
-// Array containing a list of programming languages
-const programmingLanguages = ["JavaScript", "Python", "Java", "C++", "TypeScript", "Ruby", "Swift"];
-// Print the array containing programming languages
-console.log("List of programming languages:");
-console.log(programmingLanguages);
-export {};
+"use strict";
+// 21: They think of something you could store in a TypeScript Object. 
+// Write a program that creates Objects containing these items.
+/*----------------start work-------------*/
+/*------------1st work------------*/
+// let Person : {name:string, Gender:string, age:number} ={name:"Tasbeen Arshad",Gender:"Female"
+// ,age:19}
+Object.defineProperty(exports, "__esModule", { value: true });
+// print the program 
+// console.log(Person)
+/*--------------------2nd work------------*/
+// Define objects containing information about cars
+const car1 = {
+    make: "Toyota",
+    model: "Corolla",
+    year: 2022,
+    color: "Red"
+};
+const car2 = {
+    make: "Honda",
+    model: "Civic",
+    year: 2021,
+    color: "Blue"
+};
+const car3 = {
+    make: "Ford",
+    model: "Mustang",
+    year: 2020,
+    color: "Yellow"
+};
+// Print the objects containing car information
+console.log("Car 1:", car1);
+console.log("Car 2:", car2);
+console.log("Car 3:", car3);
