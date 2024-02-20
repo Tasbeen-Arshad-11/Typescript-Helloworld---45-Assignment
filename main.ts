@@ -1,105 +1,41 @@
-// 24: More Conditional Tests: You don’t have to limit the number of tests you create to 10. 
-// If you want to try more comparisons, write more tests. Have at least one True and one False
-//  result for each of the following:
-// • Tests for equality and inequality with strings
+// 25: Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable
+//  called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+// • Write an if statement to test whether the alien’s color is green. If it is, print a 
+// message that the player just earned 5 points.
 
-// • Tests using the lower case function
+// • Write one version of this program that passes the if test and another that fails.
+//  (The version that fails will have no output.)
 
-// • Numerical tests involving equality and inequality, greater than and less than, greater 
-// than or equal to, and less than or equal to
+/*------------start work-----------*/
+/*--------1st step-----------------*/
 
-// • Tests using "and" and "or" operators
+// let Alien_Colors : string = "yellow"
 
-// • Test whether an item is in a array
+// if(Alien_Colors === "purple"){
+//     console.log("player just earned 5 points")
+// }
 
-// • Test whether an item is not in a array
+// Alien_Colors = "blue";
 
-/*------------------------start work-------------------*/
-/*------------------------1st work-------------------*/
-
-// 1• Tests for equality and inequality with strings
-// let Equality_String1 : string = "Amna";
-// let Equality_String2 : string = "Sufiyan";
-// console.log(Equality_String1 === Equality_String2);
-// console.log(Equality_String1 !== Equality_String2);
-
-
-// 2. Tests using the lower case function
-// const LowerCase : string = "Tasbeen Programmer..";
-// console.log(LowerCase.toLowerCase() === "TasbeenProgrammer")
-
-
-// 3• Numerical tests involving equality and inequality, greater than and less than, greater 
-// than or equal to, and less than or equal to
-// const Number1:Number = 20;
-// const Number2:Number = 15;
-
-// console.log(Number1 === Number2);
-// console.log(Number1 !== Number2);
-// console.log(Number1 > Number2);
-// console.log(Number1 < Number2);
-// console.log(Number1 >= Number2);
-// console.log(Number1 <= Number2);
-
-
-// 4• Tests using "and" and "or" operators
-// const Operators1 : boolean = true;
-// const Operators2: boolean = false;
-
-// console.log(Operators1 && Operators2);
-// console.log(Operators2 || Operators2);
-
-// 5• Test whether an item is in a array
-// 6• Test whether an item is not in a array
-// const Array : string[] =["Maldives","London","China","Russia","America"]
-// console.log(Array.includes("London"))
-// console.log(Array.includes("london"))
-
-
-/*-----------------2nd atep----------------*/
-// Tests for equality and inequality with strings
-let fruit1: string = 'apple';
-let fruit2: string = 'banana';
-console.log("Are the fruits equal? I predict False.");
-console.log(fruit1 == fruit2); // False
-
-console.log("Are the fruits not equal? I predict True.");
-console.log(fruit1 != fruit2); // True
-
-// Tests using the lower case function
-let word: string = 'HELLO';
-console.log("Is the word in lowercase? I predict False.");
-console.log(word.toLowerCase() === word); // False
-
-// Numerical tests
-let num1: number = 5;
-let num2: number = 10;
-console.log("Is num1 less than num2? I predict True.");
-console.log(num1 < num2); // True
-
-console.log("Is num2 greater than or equal to num1? I predict True.");
-console.log(num2 >= num1); // True
-
-// Tests using "and" and "or" operators
-let isSunny: boolean = true;
-let isWarm: boolean = true;
-console.log("Is it sunny and warm? I predict True.");
-console.log(isSunny && isWarm); // True
-
-console.log("Is it sunny or warm? I predict True.");
-console.log(isSunny || isWarm); // True
-
-// Test whether an item is in an array
-let fruits: string[] = ['apple', 'banana', 'orange'];
-let fruitToFind: string = 'apple';
-console.log("Is the fruit in the array? I predict True.");
-console.log(fruits.includes(fruitToFind)); // True
-
-// Test whether an item is not in an array
-let vegetables: string[] = ['carrot', 'tomato', 'spinach'];
-let vegetableToFind: string = 'broccoli';
-console.log("Is the vegetable not in the array? I predict True.");
-console.log(!vegetables.includes(vegetableToFind)); // True
+// if(Alien_Colors === "yellow"){
+//     console.log("player just earned 5 points")
+// } else{
+//     console.log("I`m a Student of programming..")
+// }
 
 
 
+/*----------2nd step------------*/
+// Passing 
+let alien_color1: string = 'green';
+
+if (alien_color1 === 'green') {
+    console.log("Congratulations! You just earned 5 points.");
+}
+// Failing 
+
+let alien_color2: string = 'red';
+
+if (alien_color2 === 'green') {
+    console.log("Congratulations! You just earned 5 points.");
+}
