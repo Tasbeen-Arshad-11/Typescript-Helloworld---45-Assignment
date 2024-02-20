@@ -1,15 +1,21 @@
-// 44: Sandwiches: Write a function that accepts a array of items a person wants on a 
-// sandwich. The function should have one parameter that collects as many items as the 
-// function call provides, and it should print a summary of the sandwich that is being ordered. 
-// Call the function three times, using a different number of arguments each time.
-/*-------------------strat working-------------*/
-function Sandwiches(...items) {
-    console.log("Making a sandwich with the following items:");
-    items.forEach(item => console.log("- " + item));
-    console.log("Sandwich ready!\n");
+// 45: Cars: Write a function that stores information about a car in a Object. 
+// The function should always receive a manufacturer and a model name. It should then 
+// accept an arbitrary number of keyword arguments. Call the function with the required
+//  information and two other name-value pairs, such as a color or an optional feature. 
+//  Print the Object that’s returned to make sure all the information was stored correctly.
+function create_car(manufacturer, model, ...extras) {
+    const car = {
+        manufacturer: manufacturer,
+        model: model
+    };
+    // Adding additional properties if provided
+    extras.forEach(([key, value]) => {
+        car[key] = value;
+    });
+    return car;
 }
-// Calling the function with different number of arguments
-Sandwiches("Ham", "Cheese", "Lettuce", "Tomato");
-Sandwiches("Turkey", "Bacon");
-Sandwiches("Peanut Butter", "Jelly");
+// Calling the function with required information and additional properties
+const myCar = create_car("Toyota", "Corolla", ["color", "blue"], ["year", 2023]);
+// Printing the object to check if all information was stored correctly
+console.log(myCar);
 export {};
