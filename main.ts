@@ -1,34 +1,27 @@
-// 4: Famous Quote: Find a quote from a famous person you admire.
-//  Print the quote and the name of its author. Your output should look something like the 
-//  following, including the quotation marks:
+// 5: Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name 
+// in a variable called famous_person. Then compose your message and store it in a 
+// new variable called message.Print your message.
 
-// Albert Einstein once said, “A person who never made a mistake never tried anything new.”
+/*---------------------strat working--------*/
+/* ------------------1st step--------------*/
 
-// step # 01
+// let Famous_person_rep : string = 'Mark Zuckerberg';
 
-// console.log(`Anders Hejlsberg , "Anders Hejlsberg is one of the foremost
-//  computer programmers in the world. As the creator of programming languages 
-//  such as Turbo Pascal, Delphi, C# and TypeScript, and highly influential in
-//   building development environments such as Microsoft's . 
-// NET, Hejlsberg has had an impact on millions of software developers."`);
+// let message : string = '" Co-founder, executive chairman and CEO of Meta Platforms (formerly Facebook, Inc.)"';
 
-
-// 2ns step 
-// let FamousName : string = ("Anders Hejlsberg")
-
-// console.log(`${FamousName}  "Anders Hejlsberg is one of the foremost
-//   computer programmers in the world. As the creator of programming languages 
-//   such as Turbo Pascal, Delphi, C# and TypeScript, and highly influential in
-//    building development environments such as Microsoft's . 
-//  NET, Hejlsberg has had an impact on millions of software developers." `)
+// console.log(`${Famous_person_rep} once a said, ${message}`);
 
 
-// 3rd step 
+/* ------------------2nd step--------------*/
 
-// Define the quote and its author
-const Famous_Quote: string = "A person who never made a mistake never tried anything new.";
-const author: string = "Albert Einstein";
+// Store the famous person's name in a variable
+const Famous_person_rep: string = "Albert Einstein";
 
-// Print the quote and its author
-console.log(`${author} once said, "${Famous_Quote}"`);
+// Define the quote
+const quote: string = "A person who never made a mistake never tried anything new.";
 
+// Compose the message
+const message: string = `${Famous_person_rep} once said, "${quote}"`;
+
+// Print the message
+console.log(message);
