@@ -1,14 +1,13 @@
-// 37: Large Shirts: Modify the make_shirt() function so that shirts are large by default
-//  with a message that reads I love TypeScript. Make a large shirt and a medium shirt with 
-//  the default message, and a shirt of any size with a different message.
-/*-------------------start working--------------*/
-function Large_Shirts(size = "Large", message = "I love TypeScript") {
-    console.log(`Creating a ${size} shirt with the message: "${message}"`);
+// 38: Cities: Write a function called describe_city() that accepts the name of a city 
+// and its country. The function should print a simple sentence, such as Karachi is in 
+// Pakistan. Give the parameter for the country a default value. Call your function for 
+// three different cities, at least one of which is not in the default country.
+/*------------------start working-------------*/
+function describe_city(city, country = "Unknown") {
+    console.log(`${city} is in ${country}.`);
 }
-// Creating a large shirt with default message
-Large_Shirts();
-// Creating a medium shirt with default message
-Large_Shirts("Medium");
-// Creating a shirt of any size with a different message
-Large_Shirts("Small", "Keep coding!");
+// Calling the function for three different cities
+describe_city("Karachi", "Pakistan");
+describe_city("Tokyo", "Japan");
+describe_city("Paris"); // No country provided, so default country will be used
 export {};
