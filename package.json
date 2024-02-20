@@ -1,3 +1,7 @@
 {
-  "description": ""
+  "types":"module",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.11.19"
+  }
 }
