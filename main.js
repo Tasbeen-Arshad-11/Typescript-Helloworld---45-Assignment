@@ -1,45 +1,33 @@
-// 30: Hello Admin: Make a array of five or more usernames, including the name 'admin'.
-//  Imagine you are writing code that will print a greeting to each user after they log in
-//   to a website. Loop through the array, and print a greeting to each user:
-// • If the username is 'admin', print a special greeting, such as Hello admin, would you like 
-// to see a status report?
-// • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
-/*-----------------------------------start working---------------------------*/
-// let Hello_Admin :string[] = ["Admin","Sufiyan","Hassan","Anus",]
-// for(let i=0; i<Hello_Admin.length; i++){
-//    if(Hello_Admin[i] == "Admin"){
+// 31 : No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
+// • If the list is empty, print the message We need to find some users!
+// • Remove all of the usernames from your array, and make sure the correct message is printed.
+/*----------------------------1st step-------------------------*/
+// let No_User :string[] = []
+// if (No_User.length === 0) {
+//      console.log("We need to find some users!");
+//      } else {
+// for(let i=0; i<No_User.length; i++){
+//    if(No_User[i] == "Admin"){
 //     console.log("Hello admin, would you like  to see a status report?")
-//    } 
-//     console.log(Hello_Admin[i])
-// }
-/*-----------------------------------2nnd working--------------*/
-// let Hello_Admin :string[] = ["Admin","Sufiyan","Hassan","Anus","Arshad"]
-// for(let i=0; i<Hello_Admin.length; i++){
-//    if(Hello_Admin[i] == "Admin"){
-//     console.log("Hello Admin, would you like  to see a status report?")
 //    } else{
-//     console.log(`Hello ${Hello_Admin[i]}`)
-//    } 
-// }
-/*-----------------------------------2nnd working--------------*/
-// let Hello_Admin: string[] = ['admin','Sufiyan','Hassan','Anus','Arshad'];
-// for (let Hello_admin of Hello_Admin) {
-//     if (Hello_admin.toLowerCase() === 'admin') {
-//         console.log('Hello admin, would you like to see a status report?');
-//     } else {
-//         console.log(`Hello ${Hello_admin}, thank you for logging in again.`);
-//     }
-// }
-/*-----------------------------------3rd working--------------*/
-// Array of usernames
-let usernames = ['admin', 'Sufiyan', 'Hassan', 'Anus', 'Arshad'];
-// Loop through the array and print greetings
-for (let username of usernames) {
-    if (username === 'admin') {
-        console.log("Hello admin, would you like to see a status report?");
-    }
-    else {
-        console.log(`Hello ${username}, thank you for logging in again.`);
+//     console.log(No_User[i])
+//    }
+//       }
+//  }
+/*----------------------------2nd step-------------------------*/
+let No_User = [];
+// Check if the list of users is empty
+if (No_User.length === 0) {
+    console.log("We need to find some users!");
+}
+else {
+    for (let no_user of No_User) {
+        if (no_user.toLowerCase() === 'admin') {
+            console.log('Hello Admin, would you like to see a status report?');
+        }
+        else {
+            console.log(`Hello ${no_user}, thank you for logging in again.`);
+        }
     }
 }
 export {};
